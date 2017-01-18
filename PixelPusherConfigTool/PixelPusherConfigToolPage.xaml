@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PixelPusherConfigTool" x:Class="PixelPusherConfigTool.PixelPusherConfigToolPage">
+	<StackLayout Spacing="5" x:Name="layout">
+		<Label Text="Global Options" />
+		<StackLayout Orientation="Horizontal" x:Name="ControllerLayout">
+			<Label FontSize="14" Text="Controller:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
+			<Entry HorizontalOptions="FillAndExpand" Text="0" TextColor="Black" BackgroundColor="White" />
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" x:Name="GroupLayout">
+			<Label FontSize="14" Text="Group:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
+			<Entry HorizontalOptions="FillAndExpand" Text="0" TextColor="Black" BackgroundColor="White" />
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
