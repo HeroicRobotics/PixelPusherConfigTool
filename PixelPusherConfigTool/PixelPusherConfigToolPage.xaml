@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:PixelPusherConfigTool" x:Class="PixelPusherConfigTool.PixelPusherConfigToolPage">
 	<StackLayout Spacing="5" x:Name="layout">
-		<Label Text="Global Options" />
+		<Label Text="Global Options" HorizontalOptions="Center" FontSize="24"/>
 		<StackLayout Orientation="Horizontal" x:Name="ControllerLayout">
 			<Label FontSize="14" Text="Controller:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
 			<Entry HorizontalOptions="FillAndExpand" Text="0" TextColor="Black" BackgroundColor="White" />
@@ -9,6 +9,18 @@
 		<StackLayout Orientation="Horizontal" x:Name="GroupLayout">
 			<Label FontSize="14" Text="Group:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
 			<Entry HorizontalOptions="FillAndExpand" Text="0" TextColor="Black" BackgroundColor="White" />
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" x:Name="TotalPixelsLayout">
+			<Label FontSize="14" Text="Total Pixels:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
+			<Entry HorizontalOptions="FillAndExpand" Text="0" TextColor="Black" BackgroundColor="White" />
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" x:Name="BlankStripsLayout">
+			<Label FontSize="14" Text="Blank Strips:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
+			<Entry HorizontalOptions="FillAndExpand" Text="0" TextColor="Black" BackgroundColor="White" />
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" x:Name="DataWatchdogLayout">
+			<Label FontSize="14" Text="Reboot Pixel Pusher When No Data Present:" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="100" />
+			<Button Text="Click Me!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Red" BorderColor="Red" BorderRadius = "5" BorderWidth = "1"/>
 		</StackLayout>
 	</StackLayout>
 </ContentPage>
